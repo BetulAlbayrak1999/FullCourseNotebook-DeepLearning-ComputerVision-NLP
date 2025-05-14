@@ -29,3 +29,7 @@ This part of the notebook handles image loading, preprocessing, and building a C
 
 A CNN model is built using Keras, consisting of two convolutional layers with max pooling and batch normalization to extract features and reduce overfitting. The network ends with fully connected dense layers, including dropout for regularization, and a `sigmoid` activation function to output binary predictions. The model is designed to efficiently learn patterns from image data for classification tasks.
 
+## Image Classification
+This notebook builds an image classifier using a `Convolutional Neural Network (CNN)` with `TensorFlow` and `Keras` to categorize landscape images from the Intel dataset into six classes: buildings, forest, glacier, mountain, sea, and street. Images are resized, converted to `RGB`, and normalized, while labels are extracted from folder names. The model includes `Conv2D`, `MaxPooling2D`, `Dropout`, and a final `Dense` layer with `softmax` activation. It’s compiled with the `Adam` optimizer and `categorical_crossentropy` loss. Training progress is tracked using accuracy and loss plots. Finally, performance is evaluated with a `confusion matrix`, `classification report`, and visualization of mislabeled images.
+
+
